@@ -11,5 +11,5 @@ public interface GameConfigTemplateService {
     List<GameConfigTemplate> findAll();
     boolean update(GameConfigTemplate config);
     boolean delete(String id);
-    GameConfigTemplate create(int maxHeroesPerTeam);
+    GameConfigTemplate create(GameConfigTemplate config);
 }

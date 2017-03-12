@@ -15,9 +15,10 @@ public class GameConfigTemplate {
 
     @Id
     private String id;
+    private String name;
     private int maxHeroesPerTeam;
 
-    public GameConfigTemplate(int maxHeroesPerTeam) {
-        this(null, maxHeroesPerTeam);
+    public GameConfigTemplate(String name, int maxHeroesPerTeam) {
+        this(null, name, maxHeroesPerTeam);
     }
 }

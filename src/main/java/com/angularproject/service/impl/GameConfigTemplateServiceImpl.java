@@ -22,17 +22,18 @@ public class GameConfigTemplateServiceImpl implements GameConfigTemplateService 
     private static final List<GameConfigTemplate> TEMPLATES = new ArrayList();
     static
     {
-        TEMPLATES.add(new GameConfigTemplate(3));
-        TEMPLATES.add(new GameConfigTemplate(5));
-        TEMPLATES.add(new GameConfigTemplate(8));
-        TEMPLATES.add(new GameConfigTemplate(10));
+        TEMPLATES.add(new GameConfigTemplate("Très rapide", 3));
+        TEMPLATES.add(new GameConfigTemplate("Rapide", 5));
+        TEMPLATES.add(new GameConfigTemplate("Normal", 8));
+        TEMPLATES.add(new GameConfigTemplate("Lent", 10));
+        TEMPLATES.add(new GameConfigTemplate("Très lent", 12));
     }
 
     @PostConstruct
     public void init() {
         List<GameConfigTemplate> heroes = findAll();
         if(heroes.isEmpty()) {
-            TEMPLATES.forEach(config -> this.create(config.getMaxHeroesPerTeam()));
+            TEMPLATES.forEach(this::create);
             System.out.println(TEMPLATES.size() + " are loaded.");
         } else {
             System.out.println(heroes.size() + " are loaded successful.");
@@ -56,7 +57,7 @@ public class GameConfigTemplateServiceImpl implements GameConfigTemplateService 
         return true;
     }
 
-    public GameConfigTemplate create(int maxHeroesPerTeam) {
-        return gameConfigTemplateRepository.insert(new GameConfigTemplate(maxHeroesPerTeam));
+    public GameConfigTemplate create(GameConfigTemplate config) {
+        return gameConfigTemplateRepository.insert(config);
     }
 }
