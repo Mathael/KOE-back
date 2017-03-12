@@ -15,7 +15,7 @@ import java.util.List;
  */
 @RestController
 @CrossOrigin("*")
-@RequestMapping(value = "/gamconfig", produces = "application/json")
+@RequestMapping(value = "/gameconfig", produces = "application/json")
 public class GameConfigController {
 
     @Autowired
