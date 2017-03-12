@@ -1,0 +1,2292 @@
+[
+    {
+        "id": "58b9f1e3e5a04b2280645343",
+        "name": "Aatrox",
+        "description": "Aatrox est un guerrier légendaire, l'un des cinq derniers survivants d'une race antique connue sous le nom de Darkin. Il porte sa large épée avec grâce et prestance, et se fraie un chemin dans les rangs ennemis dans un style hypnotisant.",
+        "imageName": "aatrox",
+        "movePattern": [
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": -1,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 1,
+                "y": -1
+            },
+            {
+                "x": 1,
+                "y": 1
+            },
+            {
+                "x": 2,
+                "y": 0
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": -1
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 0,
+                "y": 1
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 957
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 5
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 8
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 7
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 9
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b2280645344",
+        "name": "Ahri",
+        "description": "Au contraire des autres renards qui parcourent les bois du Sud d'Ionia, Ahri avait toujours ressenti un lien étrange avec le monde magique qui l'entourait. Un lien qui pourtant lui semblait incomplet. Au plus profond d'elle-même, elle éprouvait le sentiment que son corps ne lui était pas adapté et elle rêvait de devenir un jour humaine.",
+        "imageName": "ahri",
+        "movePattern": [
+            {
+                "x": -2,
+                "y": 2
+            },
+            {
+                "x": -2,
+                "y": -2
+            },
+            {
+                "x": 2,
+                "y": -2
+            },
+            {
+                "x": 2,
+                "y": 2
+            },
+            {
+                "x": 0,
+                "y": 3
+            },
+            {
+                "x": 0,
+                "y": -3
+            },
+            {
+                "x": -3,
+                "y": 0
+            },
+            {
+                "x": 3,
+                "y": 0
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 2,
+                "y": 2
+            },
+            {
+                "x": 3,
+                "y": 3
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 2,
+                "y": 0
+            },
+            {
+                "x": 3,
+                "y": 0
+            },
+            {
+                "x": 2,
+                "y": -2
+            },
+            {
+                "x": 3,
+                "y": -3
+            },
+            {
+                "x": -1,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 1
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 0,
+                "y": 1
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 676
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 7
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 6
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 9
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 7
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b2280645345",
+        "name": "Ash",
+        "description": "Archère de Freljord",
+        "imageName": "ash",
+        "movePattern": [
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 2,
+                "y": 2
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 1,
+                "y": -2
+            },
+            {
+                "x": 2,
+                "y": -2
+            },
+            {
+                "x": 1,
+                "y": 2
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 2,
+                "y": 0
+            },
+            {
+                "x": 3,
+                "y": 0
+            },
+            {
+                "x": 3,
+                "y": -1
+            },
+            {
+                "x": 3,
+                "y": 1
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 876
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 5
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 5
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 7
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 7
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b2280645346",
+        "name": "Cassiopeia",
+        "description": "Une autre description à faire",
+        "imageName": "cassiopeia",
+        "movePattern": [
+            {
+                "x": -1,
+                "y": 1
+            },
+            {
+                "x": 0,
+                "y": 2
+            },
+            {
+                "x": 0,
+                "y": -2
+            },
+            {
+                "x": -1,
+                "y": -1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 2,
+                "y": 0
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 2,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 946
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 7
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 5
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 8
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b2280645347",
+        "name": "Diana",
+        "description": "Une autre description à faire",
+        "imageName": "diana",
+        "movePattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 714
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 9
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 9
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 5
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b2280645348",
+        "name": "Gnar",
+        "description": "Une autre description à faire",
+        "imageName": "gnar",
+        "movePattern": [
+            {
+                "x": 2,
+                "y": 0
+            },
+            {
+                "x": 2,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 0,
+                "y": 3
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 879
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 8
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 7
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 8
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 9
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b2280645349",
+        "name": "Janna",
+        "description": "Une autre description à faire",
+        "imageName": "janna",
+        "movePattern": [
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": -1
+            },
+            {
+                "x": 1,
+                "y": 1
+            },
+            {
+                "x": -1,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 1
+            },
+            {
+                "x": 2,
+                "y": -2
+            },
+            {
+                "x": 2,
+                "y": 2
+            },
+            {
+                "x": -2,
+                "y": -2
+            },
+            {
+                "x": -2,
+                "y": 2
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 627
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 5
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 6
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 9
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 6
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b228064534a",
+        "name": "Jarvan IV",
+        "description": "",
+        "imageName": "jarvan",
+        "movePattern": [
+            {
+                "x": 2,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 2
+            },
+            {
+                "x": 0,
+                "y": -2
+            },
+            {
+                "x": -2,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": -1
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": -1
+            },
+            {
+                "x": 1,
+                "y": -1
+            },
+            {
+                "x": 1,
+                "y": 1
+            },
+            {
+                "x": -1,
+                "y": 1
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 636
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 5
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 8
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 9
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 6
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b228064534b",
+        "name": "Leona",
+        "description": "Une autre description à faire",
+        "imageName": "leona",
+        "movePattern": [
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 1,
+                "y": 1
+            },
+            {
+                "x": 2,
+                "y": 0
+            },
+            {
+                "x": 1,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 1
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 1,
+                "y": -1
+            },
+            {
+                "x": 1,
+                "y": 1
+            },
+            {
+                "x": 0,
+                "y": 1
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 693
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 7
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 6
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 8
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 8
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b228064534c",
+        "name": "Lux",
+        "description": "Une autre description à faire",
+        "imageName": "lux",
+        "movePattern": [
+            {
+                "x": -1,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": -1
+            },
+            {
+                "x": 1,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": -2
+            },
+            {
+                "x": 1,
+                "y": 2
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 2,
+                "y": 0
+            },
+            {
+                "x": 3,
+                "y": 0
+            },
+            {
+                "x": 3,
+                "y": -1
+            },
+            {
+                "x": 3,
+                "y": 1
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 684
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 5
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 10
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 9
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 7
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b228064534d",
+        "name": "Miss Fortune",
+        "description": "Une autre description à faire",
+        "imageName": "missfortune",
+        "movePattern": [
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 2,
+                "y": -1
+            },
+            {
+                "x": 2,
+                "y": 1
+            },
+            {
+                "x": -1,
+                "y": 1
+            },
+            {
+                "x": -1,
+                "y": 2
+            },
+            {
+                "x": -1,
+                "y": -2
+            },
+            {
+                "x": -1,
+                "y": -1
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 2,
+                "y": 0
+            },
+            {
+                "x": 3,
+                "y": -1
+            },
+            {
+                "x": 3,
+                "y": 1
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 872
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 10
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 7
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 10
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 8
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b228064534e",
+        "name": "Nasus",
+        "description": "Une autre description à faire",
+        "imageName": "nasus",
+        "movePattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": -1,
+                "y": 1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": -1
+            },
+            {
+                "x": 1,
+                "y": -1
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 1,
+                "y": 1
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": -1,
+                "y": 1
+            },
+            {
+                "x": -1,
+                "y": -1
+            },
+            {
+                "x": 1,
+                "y": -1
+            },
+            {
+                "x": 1,
+                "y": 1
+            },
+            {
+                "x": -2,
+                "y": 0
+            },
+            {
+                "x": 2,
+                "y": 0
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 829
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 8
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 8
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 9
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 8
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b228064534f",
+        "name": "Orianna",
+        "description": "Une autre description à faire",
+        "imageName": "orianna",
+        "movePattern": [
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -2,
+                "y": 0
+            },
+            {
+                "x": 2,
+                "y": 0
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 0,
+                "y": 3
+            },
+            {
+                "x": -2,
+                "y": 0
+            },
+            {
+                "x": 2,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 1,
+                "y": 0
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 865
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 7
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 15
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 8
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 10
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b2280645350",
+        "name": "Renekton",
+        "description": "Une autre description à faire",
+        "imageName": "renekton",
+        "movePattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 1,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": -1
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": -1
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 816
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 8
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 7
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 10
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b2280645351",
+        "name": "Sona",
+        "description": "Une autre description à faire",
+        "imageName": "sona",
+        "movePattern": [
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": -1,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 1
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 2,
+                "y": 1
+            },
+            {
+                "x": 2,
+                "y": -1
+            },
+            {
+                "x": 2,
+                "y": 0
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": 2,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": -1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 1,
+                "y": 1
+            },
+            {
+                "x": 2,
+                "y": -1
+            },
+            {
+                "x": 2,
+                "y": 1
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 902
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 7
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 9
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 9
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 7
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b2280645352",
+        "name": "Sion",
+        "description": "Une autre description à faire",
+        "imageName": "sion",
+        "movePattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 1,
+                "y": -1
+            },
+            {
+                "x": 2,
+                "y": -2
+            },
+            {
+                "x": 1,
+                "y": 1
+            },
+            {
+                "x": 2,
+                "y": 2
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 677
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 8
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 6
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 6
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 6
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b2280645353",
+        "name": "Shyvana",
+        "description": "Une autre description à faire",
+        "imageName": "shyvana",
+        "movePattern": [
+            {
+                "x": 3,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 825
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 5
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 5
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 5
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b2280645354",
+        "name": "Teemo",
+        "description": "Une autre description à faire",
+        "imageName": "teemo",
+        "movePattern": [
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 672
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 5
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 5
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 9
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 7
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b2280645355",
+        "name": "Thresh",
+        "description": "Une autre description à faire",
+        "imageName": "thresh",
+        "movePattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 643
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 5
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 10
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 6
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b2280645356",
+        "name": "Vi",
+        "description": "Une autre description à faire",
+        "imageName": "vi",
+        "movePattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 1,
+                "y": 0
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 0,
+                "y": 1
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 734
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 5
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 6
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 7
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 9
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b2280645357",
+        "name": "Yi",
+        "description": "Une autre description à faire",
+        "imageName": "yi",
+        "movePattern": [
+            {
+                "x": 3,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 1,
+                "y": 0
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 0,
+                "y": 1
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 749
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 10
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 8
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 5
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 9
+            }
+        ]
+    },
+    {
+        "id": "58b9f1e3e5a04b2280645358",
+        "name": "Zed",
+        "description": "Une autre description à faire",
+        "imageName": "zed",
+        "movePattern": [
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            }
+        ],
+        "attackPattern": [
+            {
+                "x": 0,
+                "y": 1
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": -1,
+                "y": 0
+            }
+        ],
+        "assistancePattern": [
+            {
+                "x": -1,
+                "y": 0
+            },
+            {
+                "x": 1,
+                "y": 0
+            },
+            {
+                "x": 0,
+                "y": -1
+            },
+            {
+                "x": 0,
+                "y": 1
+            }
+        ],
+        "stats": [
+            {
+                "sid": "HEALTH",
+                "label": "Points de vie",
+                "value": 927
+            },
+            {
+                "sid": "PATK",
+                "label": "Attaque physique",
+                "value": 6
+            },
+            {
+                "sid": "MATK",
+                "label": "Attaque magique",
+                "value": 8
+            },
+            {
+                "sid": "PDEF",
+                "label": "Défense physique",
+                "value": 10
+            },
+            {
+                "sid": "MDEF",
+                "label": "Défense magique",
+                "value": 6
+            }
+        ]
+    }
+]
