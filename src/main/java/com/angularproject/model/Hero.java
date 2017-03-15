@@ -1,5 +1,6 @@
 package com.angularproject.model;
 
+import com.angularproject.enums.Stats;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -31,7 +32,24 @@ public class Hero {
 
     private List<Stat> stats;
 
+    private double maxHp;
+    private double maxMp;
+    private double currentHp;
+    private double currentMp;
+
     public Hero(String name, String imageName, String description, List<Coordinate> movePattern, List<Coordinate> attackPattern, List<Coordinate> assistancePattern,  List<Stat> stats) {
-        this(null, name, description, imageName, movePattern, attackPattern, assistancePattern, stats);
+        this(null, name, description, imageName, movePattern, attackPattern, assistancePattern, stats, 0, 0, 0, 0);
+        final double hp = calcMaxHp();
+        setMaxHp(hp);
+        setCurrentHp(hp);
+    }
+
+    private double calcMaxHp() {
+        return getStatValue(Stats.CON) * 10 + getStatValue(Stats.STR) * 2 - getStatValue(Stats.MEN);
+    }
+
+    private int getStatValue(Stats stat) {
+        final Stat reqStat = getStats().stream().filter(s -> s.getSid().ordinal() == stat.ordinal()).findFirst().orElse(null);
+        return reqStat != null ? reqStat.getValue() : 0;
     }
 }
