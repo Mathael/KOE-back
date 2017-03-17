@@ -16,9 +16,10 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         // Swagger need that Jar to be deployed and Swagger-ui need the HTML to be deployed
         registry
-                .addResourceHandler("/webjars/**")
-                .addResourceLocations("classpath:/META-INF/resources/webjars/");
-        registry.addResourceHandler("swagger-ui.html")
-                .addResourceLocations("classpath:/META-INF/resources/");
+                .addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
+        registry
+                .addResourceHandler("swagger-ui.html").addResourceLocations("classpath:/META-INF/resources/");
+        registry
+                .addResourceHandler("/resources/**").addResourceLocations("resources/");
     }
 }
