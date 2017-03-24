@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * @author Leboc Philippe.
@@ -67,7 +68,7 @@ public class HeroServiceImpl implements HeroService {
     }
 
     @Override
-    public Hero findById(String id) {
+    public Optional<Hero> findById(String id) {
         return heroRepository.findOne(id);
     }
 

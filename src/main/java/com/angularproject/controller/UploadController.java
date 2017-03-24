@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.Optional;
 
 /**
  * @author Leboc Philippe.
@@ -27,8 +28,10 @@ public class UploadController {
         Assert.notNull(multipartFile, "File is null");
         Assert.notNull(multipartFile.getBytes(), "File is null");
 
-        final Hero hero = heroService.findById(heroId);
-        if(hero == null) return null;
+        final Optional<Hero> heroOpt = heroService.findById(heroId);
+        if(!heroOpt.isPresent()) return null;
+
+        final Hero hero = heroOpt.get();
 
         if(type.equalsIgnoreCase("icon"))
             hero.setIconB64(Base64.encode(multipartFile.getBytes()));
