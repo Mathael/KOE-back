@@ -31,31 +31,31 @@ public class HeroServiceImpl implements HeroService {
         HEROES.add(new Hero("Ahri", "ahri", "Au contraire des autres renards qui parcourent les bois du Sud d'Ionia, Ahri avait toujours ressenti un lien étrange avec le monde magique qui l'entourait. Un lien qui pourtant lui semblait incomplet. Au plus profond d'elle-même, elle éprouvait le sentiment que son corps ne lui était pas adapté et elle rêvait de devenir un jour humaine.", pattern, pattern, pattern, getUniqStats()));
         HEROES.add(new Hero("Ash", "ash", "Archère de Freljord", pattern, pattern, pattern, getUniqStats()));
         HEROES.add(new Hero("Cassiopeia", "cassiopeia", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Diana", "diana", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Gnar", "gnar", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Janna", "janna", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
+        HEROES.add(new Hero("Diana", "diana", "Description à faire", pattern, pattern, pattern, getUniqStats()));
+        HEROES.add(new Hero("Gnar", "gnar", "Description à faire", pattern, pattern, pattern, getUniqStats()));
+        HEROES.add(new Hero("Janna", "janna", "Description à faire", pattern, pattern, pattern, getUniqStats()));
         HEROES.add(new Hero("Jarvan IV","jarvan", "", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Leona", "leona", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Lux", "lux", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Miss Fortune", "missfortune", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Nasus", "nasus", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Orianna", "orianna", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Renekton", "renekton", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Sona", "sona", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Sion", "sion", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Shyvana", "shyvana", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Teemo", "teemo", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Thresh", "thresh", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Vi", "vi", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Yi", "yi", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Zed", "zed", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
+        HEROES.add(new Hero("Leona", "leona", "Description à faire", pattern, pattern, pattern, getUniqStats()));
+        HEROES.add(new Hero("Lux", "lux", "Description à faire", pattern, pattern, pattern, getUniqStats()));
+        HEROES.add(new Hero("Miss Fortune", "missfortune", "Description à faire", pattern, pattern, pattern, getUniqStats()));
+        HEROES.add(new Hero("Nasus", "nasus", "Description à faire", pattern, pattern, pattern, getUniqStats()));
+        HEROES.add(new Hero("Orianna", "orianna", "Description à faire", pattern, pattern, pattern, getUniqStats()));
+        HEROES.add(new Hero("Renekton", "renekton", "Description à faire", pattern, pattern, pattern, getUniqStats()));
+        HEROES.add(new Hero("Sona", "sona", "Description à faire", pattern, pattern, pattern, getUniqStats()));
+        HEROES.add(new Hero("Sion", "sion", "Description à faire", pattern, pattern, pattern, getUniqStats()));
+        HEROES.add(new Hero("Shyvana", "shyvana", "Description à faire", pattern, pattern, pattern, getUniqStats()));
+        HEROES.add(new Hero("Teemo", "teemo", "Description à faire", pattern, pattern, pattern, getUniqStats()));
+        HEROES.add(new Hero("Thresh", "thresh", "Description à faire", pattern, pattern, pattern, getUniqStats()));
+        HEROES.add(new Hero("Vi", "vi", "Description à faire", pattern, pattern, pattern, getUniqStats()));
+        HEROES.add(new Hero("Yi", "yi", "Description à faire", pattern, pattern, pattern, getUniqStats()));
+        HEROES.add(new Hero("Zed", "zed", "Description à faire", pattern, pattern, pattern, getUniqStats()));
     }
 
     @PostConstruct
     public void init() {
         List<Hero> heroes = findAll();
         if(heroes.isEmpty()) {
-            HEROES.forEach(hero -> this.create(hero.getName(), hero.getImageName(), hero.getDescription(), hero.getMovePattern(), hero.getAttackPattern(), hero.getAssistancePattern(), hero.getStats()));
+            HEROES.forEach(hero -> this.create(hero.getName(), hero.getImage(), hero.getDescription(), hero.getMovePattern(), hero.getAttackPattern(), hero.getAssistancePattern(), hero.getStats()));
             System.out.println(HEROES.size() + " are loaded.");
         } else {
             System.out.println(heroes.size() + " are loaded successful.");
@@ -64,6 +64,11 @@ public class HeroServiceImpl implements HeroService {
 
     public List<Hero> findAll() {
         return heroRepository.findAll();
+    }
+
+    @Override
+    public Hero findById(String id) {
+        return heroRepository.findOne(id);
     }
 
     public boolean update(Hero hero) {
@@ -79,12 +84,18 @@ public class HeroServiceImpl implements HeroService {
         return true;
     }
 
+    @Override
     public Hero create(String name, String imageName, String description, List<Coordinate> movePattern, List<Coordinate> attackPattern, List<Coordinate> assistancePattern, List<Stat> stats) {
         return heroRepository.insert(new Hero(name, imageName, description, movePattern, attackPattern, assistancePattern, stats));
     }
 
+    @Override
+    public Hero create(final Hero hero) {
+        return heroRepository.insert(hero);
+    }
+
     private static List<Stat> getUniqStats() {
-        final int str = Utils.getRandomNumberInRange(1, 35);
+        final int str = Utils.getRandomNumberInRange(1, 20);
         final int con = Utils.getRandomNumberInRange(1, 40-str-3);
         final int dex = Utils.getRandomNumberInRange(1, 40-str-con-2);
         final int intel = Utils.getRandomNumberInRange(1, 40-str-con-dex-1);

@@ -24,7 +24,10 @@ public class Hero {
     @Indexed
     private String name;
     private String description;
-    private String imageName;
+
+    private String image; // Support for first run image & icon
+    private String imageB64; // Uploaded images will be converted to base64
+    private String iconB64; // Uploaded icon will be converted to base64
 
     private List<Coordinate> movePattern;
     private List<Coordinate> attackPattern;
@@ -37,8 +40,16 @@ public class Hero {
     private double currentHp;
     private double currentMp;
 
-    public Hero(String name, String imageName, String description, List<Coordinate> movePattern, List<Coordinate> attackPattern, List<Coordinate> assistancePattern,  List<Stat> stats) {
-        this(null, name, description, imageName, movePattern, attackPattern, assistancePattern, stats, 0, 0, 0, 0);
+    // Used to create a new Hero from front app
+    public Hero(String name, String description, List<Coordinate> movePattern, List<Coordinate> attackPattern, List<Coordinate> assistancePattern,  List<Stat> stats) {
+        this(null, name, description, name.toLowerCase(), "", "", movePattern, attackPattern, assistancePattern, stats, 0, 0, 0, 0);
+        final double hp = calcMaxHp();
+        setMaxHp(hp);
+        setCurrentHp(hp);
+    }
+
+    public Hero(String name, String image, String description, List<Coordinate> movePattern, List<Coordinate> attackPattern, List<Coordinate> assistancePattern,  List<Stat> stats) {
+        this(null, name, description, image, "", "", movePattern, attackPattern, assistancePattern, stats, 0, 0, 0, 0);
         final double hp = calcMaxHp();
         setMaxHp(hp);
         setCurrentHp(hp);

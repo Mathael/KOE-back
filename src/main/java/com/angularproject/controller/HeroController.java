@@ -35,4 +35,15 @@ public class HeroController {
         Assert.hasLength(id, "Parameter id is null or empty");
         return heroService.deleteHero(id);
     }
+
+    @RequestMapping(method = RequestMethod.POST)
+    public Hero create(@RequestBody Hero hero) {
+        Assert.notNull(hero, "The hero object is null");
+        Assert.hasLength(hero.getName(), "The hero name is null or empty");
+        Assert.notNull(hero.getMovePattern(), "The hero move pattern is null");
+        Assert.notNull(hero.getAssistancePattern(), "The hero assist pattern is null");
+        Assert.notNull(hero.getAttackPattern(), "The hero attack pattern is null");
+        Assert.notEmpty(hero.getStats(), "The hero stats is null or empty");
+        return heroService.create(hero);
+    }
 }

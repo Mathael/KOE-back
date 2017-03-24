@@ -11,7 +11,9 @@ import java.util.List;
  */
 public interface HeroService {
     List<Hero> findAll();
+    Hero findById(String id);
     boolean update(Hero hero);
     boolean deleteHero(String id);
     Hero create(String name, String imageName, String description, List<Coordinate> movePattern, List<Coordinate> attackPattern, List<Coordinate> assistancePattern, List<Stat> stats);
+    Hero create(Hero hero);
 }
