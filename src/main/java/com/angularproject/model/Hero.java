@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
@@ -35,21 +36,31 @@ public class Hero {
 
     private List<Stat> stats;
 
+    @DBRef
+    private Item item;
+
     private double maxHp;
     private double maxMp;
     private double currentHp;
     private double currentMp;
 
-    // Used to create a new Hero from front app
     public Hero(String name, String description, List<Coordinate> movePattern, List<Coordinate> attackPattern, List<Coordinate> assistancePattern,  List<Stat> stats) {
-        this(null, name, description, name.toLowerCase(), "", "", movePattern, attackPattern, assistancePattern, stats, 0, 0, 0, 0);
+        this(null, name, description, name.toLowerCase(), "", "", movePattern, attackPattern, assistancePattern, stats, null, 0, 0, 0, 0);
         final double hp = calcMaxHp();
         setMaxHp(hp);
         setCurrentHp(hp);
     }
 
-    public Hero(String name, String image, String description, List<Coordinate> movePattern, List<Coordinate> attackPattern, List<Coordinate> assistancePattern,  List<Stat> stats) {
-        this(null, name, description, image, "", "", movePattern, attackPattern, assistancePattern, stats, 0, 0, 0, 0);
+    // Used to create a new Hero from front app
+    public Hero(String name, String description, List<Coordinate> movePattern, List<Coordinate> attackPattern, List<Coordinate> assistancePattern,  List<Stat> stats, Item item) {
+        this(null, name, description, name.toLowerCase(), "", "", movePattern, attackPattern, assistancePattern, stats, item, 0, 0, 0, 0);
+        final double hp = calcMaxHp();
+        setMaxHp(hp);
+        setCurrentHp(hp);
+    }
+
+    public Hero(String name, String image, String description, List<Coordinate> movePattern, List<Coordinate> attackPattern, List<Coordinate> assistancePattern,  List<Stat> stats, Item item) {
+        this(null, name, description, image, "", "", movePattern, attackPattern, assistancePattern, stats, item, 0, 0, 0, 0);
         final double hp = calcMaxHp();
         setMaxHp(hp);
         setCurrentHp(hp);

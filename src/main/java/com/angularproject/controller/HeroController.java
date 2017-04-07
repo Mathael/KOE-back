@@ -13,7 +13,7 @@ import java.util.List;
  */
 @RestController
 @CrossOrigin(origins = "*")
-@RequestMapping(value = "/hero", produces = "application/json")
+@RequestMapping(value = "/hero")
 public class HeroController {
 
     @Autowired

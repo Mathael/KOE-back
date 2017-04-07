@@ -28,28 +28,28 @@ public class HeroServiceImpl implements HeroService {
     static
     {
         final List<Coordinate> pattern = generateTemporaryPattern();
-        HEROES.add(new Hero("Aatrox", "aatrox", "Aatrox est un guerrier légendaire, l'un des cinq derniers survivants d'une race antique connue sous le nom de Darkin. Il porte sa large épée avec grâce et prestance, et se fraie un chemin dans les rangs ennemis dans un style hypnotisant.", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Ahri", "ahri", "Au contraire des autres renards qui parcourent les bois du Sud d'Ionia, Ahri avait toujours ressenti un lien étrange avec le monde magique qui l'entourait. Un lien qui pourtant lui semblait incomplet. Au plus profond d'elle-même, elle éprouvait le sentiment que son corps ne lui était pas adapté et elle rêvait de devenir un jour humaine.", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Ash", "ash", "Archère de Freljord", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Cassiopeia", "cassiopeia", "Une autre description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Diana", "diana", "Description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Gnar", "gnar", "Description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Janna", "janna", "Description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Jarvan IV","jarvan", "", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Leona", "leona", "Description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Lux", "lux", "Description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Miss Fortune", "missfortune", "Description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Nasus", "nasus", "Description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Orianna", "orianna", "Description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Renekton", "renekton", "Description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Sona", "sona", "Description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Sion", "sion", "Description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Shyvana", "shyvana", "Description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Teemo", "teemo", "Description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Thresh", "thresh", "Description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Vi", "vi", "Description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Yi", "yi", "Description à faire", pattern, pattern, pattern, getUniqStats()));
-        HEROES.add(new Hero("Zed", "zed", "Description à faire", pattern, pattern, pattern, getUniqStats()));
+        HEROES.add(new Hero("Aatrox", "aatrox", "Aatrox est un guerrier légendaire, l'un des cinq derniers survivants d'une race antique connue sous le nom de Darkin. Il porte sa large épée avec grâce et prestance, et se fraie un chemin dans les rangs ennemis dans un style hypnotisant.", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Ahri", "ahri", "Au contraire des autres renards qui parcourent les bois du Sud d'Ionia, Ahri avait toujours ressenti un lien étrange avec le monde magique qui l'entourait. Un lien qui pourtant lui semblait incomplet. Au plus profond d'elle-même, elle éprouvait le sentiment que son corps ne lui était pas adapté et elle rêvait de devenir un jour humaine.", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Ash", "ash", "Archère de Freljord", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Cassiopeia", "cassiopeia", "Une autre description à faire", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Diana", "diana", "Description à faire", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Gnar", "gnar", "Description à faire", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Janna", "janna", "Description à faire", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Jarvan IV","jarvan", "", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Leona", "leona", "Description à faire", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Lux", "lux", "Description à faire", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Miss Fortune", "missfortune", "Description à faire", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Nasus", "nasus", "Description à faire", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Orianna", "orianna", "Description à faire", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Renekton", "renekton", "Description à faire", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Sona", "sona", "Description à faire", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Sion", "sion", "Description à faire", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Shyvana", "shyvana", "Description à faire", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Teemo", "teemo", "Description à faire", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Thresh", "thresh", "Description à faire", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Vi", "vi", "Description à faire", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Yi", "yi", "Description à faire", pattern, pattern, pattern, getUniqStats(), null));
+        HEROES.add(new Hero("Zed", "zed", "Description à faire", pattern, pattern, pattern, getUniqStats(), null));
     }
 
     @PostConstruct
@@ -87,7 +87,7 @@ public class HeroServiceImpl implements HeroService {
 
     @Override
     public Hero create(String name, String imageName, String description, List<Coordinate> movePattern, List<Coordinate> attackPattern, List<Coordinate> assistancePattern, List<Stat> stats) {
-        return heroRepository.insert(new Hero(name, imageName, description, movePattern, attackPattern, assistancePattern, stats));
+        return heroRepository.insert(new Hero(name, imageName, description, movePattern, attackPattern, assistancePattern, stats, null));
     }
 
     @Override
