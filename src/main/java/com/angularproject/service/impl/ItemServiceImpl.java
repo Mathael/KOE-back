@@ -23,14 +23,15 @@ public class ItemServiceImpl implements ItemService {
     @Autowired
     private ItemRepository itemRepository;
 
-    private static final List<Item> ITEMS = new ArrayList();
+    private static final List<Item> ITEMS = new ArrayList<>();
     static
     {
-        ITEMS.add(new Item(null, "AAAA", getUniqStats()));
-        ITEMS.add(new Item(null, "BBBB", getUniqStats()));
-        ITEMS.add(new Item(null, "CCCC", getUniqStats()));
-        ITEMS.add(new Item(null, "DDDD", getUniqStats()));
-        ITEMS.add(new Item(null, "EEEE", getUniqStats()));
+        ITEMS.add(new Item(null, "Épée démoniaque", getUniqStats(), "sword", null));
+        ITEMS.add(new Item(null, "Lance", getUniqStats(), "spear", null));
+        ITEMS.add(new Item(null, "Anneau céleste", getUniqStats(), "ring", null));
+        ITEMS.add(new Item(null, "Hache double tranchant", getUniqStats(), "cleaver", null));
+        ITEMS.add(new Item(null, "Arc long", getUniqStats(), "bow", null));
+        ITEMS.add(new Item(null, "Masque Maya", getUniqStats(), "mask", null));
     }
 
     @PostConstruct
@@ -38,9 +39,9 @@ public class ItemServiceImpl implements ItemService {
         List<Item> items = findAll();
         if(items.isEmpty()) {
             ITEMS.forEach(this::create);
-            System.out.println(ITEMS.size() + " are loaded.");
+            System.out.println(ITEMS.size() + " items loaded");
         } else {
-            System.out.println(items.size() + " are loaded successful.");
+            System.out.println(items.size() + "items loaded");
         }
     }
 
@@ -71,9 +72,13 @@ public class ItemServiceImpl implements ItemService {
     }
 
     private static List<Stat> getUniqStats() {
-        final int str = Utils.getRandomNumberInRange(1, 15);
+        final int str = Utils.getRandomNumberInRange(1, 10);
         final List<Stat> stats = new ArrayList<>();
         stats.add(new Stat(Stats.STR,"Force physique", str));
+        stats.add(new Stat(Stats.CON,"Vitalité", -str));
+        stats.add(new Stat(Stats.DEX,"Dextérité", 0));
+        stats.add(new Stat(Stats.INT,"Intelligence", 0));
+        stats.add(new Stat(Stats.MEN,"Mental", 0));
         return stats;
     }
 }

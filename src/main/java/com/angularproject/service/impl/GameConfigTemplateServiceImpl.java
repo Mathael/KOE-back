@@ -19,7 +19,7 @@ public class GameConfigTemplateServiceImpl implements GameConfigTemplateService 
     @Autowired
     private GameConfigTemplateRepository gameConfigTemplateRepository;
 
-    private static final List<GameConfigTemplate> TEMPLATES = new ArrayList();
+    private static final List<GameConfigTemplate> TEMPLATES = new ArrayList<>();
     static
     {
         TEMPLATES.add(new GameConfigTemplate("Très rapide", 3));
@@ -34,9 +34,9 @@ public class GameConfigTemplateServiceImpl implements GameConfigTemplateService 
         List<GameConfigTemplate> heroes = findAll();
         if(heroes.isEmpty()) {
             TEMPLATES.forEach(this::create);
-            System.out.println(TEMPLATES.size() + " are loaded.");
+            System.out.println(TEMPLATES.size() + " game config loaded");
         } else {
-            System.out.println(heroes.size() + " are loaded successful.");
+            System.out.println(heroes.size() + " game config loaded");
         }
     }
 

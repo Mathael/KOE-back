@@ -17,9 +17,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @SpringBootApplication
 @ComponentScan(basePackages = "com.angularproject")
 public class AngularProjectApplication {
-	public static void main(String[] args) {
-		SpringApplication.run(AngularProjectApplication.class, args);
-	}
+
+    public static void main(String[] args) {
+        SpringApplication.run(AngularProjectApplication.class, args);
+    }
 
     @Bean
     public WebMvcConfigurer corsConfigurer() {

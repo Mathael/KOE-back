@@ -24,7 +24,7 @@ public class HeroServiceImpl implements HeroService {
     @Autowired
     private HeroRepository heroRepository;
 
-    private static final List<Hero> HEROES = new ArrayList();
+    private static final List<Hero> HEROES = new ArrayList<>();
     static
     {
         final List<Coordinate> pattern = generateTemporaryPattern();
@@ -57,9 +57,9 @@ public class HeroServiceImpl implements HeroService {
         List<Hero> heroes = findAll();
         if(heroes.isEmpty()) {
             HEROES.forEach(hero -> this.create(hero.getName(), hero.getImage(), hero.getDescription(), hero.getMovePattern(), hero.getAttackPattern(), hero.getAssistancePattern(), hero.getStats()));
-            System.out.println(HEROES.size() + " are loaded.");
+            System.out.println(HEROES.size() + " heroes loaded");
         } else {
-            System.out.println(heroes.size() + " are loaded successful.");
+            System.out.println(heroes.size() + " heroes loaded");
         }
     }
 
