@@ -57,7 +57,8 @@ public class ItemServiceImpl implements ItemService {
 
     @Override
     public boolean update(Item item) {
-        return false;
+        itemRepository.save(item);
+        return true;
     }
 
     @Override
@@ -68,7 +69,7 @@ public class ItemServiceImpl implements ItemService {
 
     @Override
     public Item create(Item item) {
-        return itemRepository.save(item);
+        return itemRepository.insert(item);
     }
 
     private static List<Stat> getUniqStats() {

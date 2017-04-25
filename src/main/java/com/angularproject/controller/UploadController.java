@@ -1,7 +1,9 @@
 package com.angularproject.controller;
 
 import com.angularproject.model.Hero;
+import com.angularproject.model.Item;
 import com.angularproject.service.HeroService;
+import com.angularproject.service.ItemService;
 import com.sun.org.apache.xml.internal.security.utils.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.Assert;
@@ -22,16 +24,19 @@ public class UploadController {
     @Autowired
     private HeroService heroService;
 
-    @RequestMapping(value = "/{heroId}/{type}", method = RequestMethod.POST)
-    public Hero uploadFile(@PathVariable("heroId") String heroId, @PathVariable("type") String type, @RequestParam("file") MultipartFile multipartFile) throws IOException {
-        Assert.hasLength(heroId, "Hero id is null or empty");
+    @Autowired
+    private ItemService itemService;
+
+    @RequestMapping(value = "/hero/{heroId}/{type}", method = RequestMethod.POST)
+    public Hero uploadHeroImage(@PathVariable("heroId") String entityId, @PathVariable("type") String type, @RequestParam("file") MultipartFile multipartFile) throws IOException {
+        Assert.hasLength(entityId, "heroId id is null or empty");
         Assert.notNull(multipartFile, "File is null");
         Assert.notNull(multipartFile.getBytes(), "File is null");
 
-        final Optional<Hero> heroOpt = heroService.findById(heroId);
-        if(!heroOpt.isPresent()) return null;
+        final Optional<Hero> optionnal = heroService.findById(entityId);
+        if(!optionnal.isPresent()) return null;
 
-        final Hero hero = heroOpt.get();
+        final Hero hero = optionnal.get();
 
         if(type.equalsIgnoreCase("icon"))
             hero.setIconB64(Base64.encode(multipartFile.getBytes()));
@@ -41,5 +46,23 @@ public class UploadController {
         heroService.update(hero);
 
         return hero;
+    }
+
+    @RequestMapping(value = "/item/{itemId}/{type}", method = RequestMethod.POST)
+    public Item uploadItemImage(@PathVariable("itemId") String itemId, @PathVariable("type") String type, @RequestParam("file") MultipartFile multipartFile) throws IOException {
+        Assert.hasLength(itemId, "itemId id is null or empty");
+        Assert.notNull(multipartFile, "File is null");
+        Assert.notNull(multipartFile.getBytes(), "File is null");
+
+        final Optional<Item> optionnal = itemService.findById(itemId);
+        if(!optionnal.isPresent()) return null;
+
+        final Item item = optionnal.get();
+
+        item.setImageB64(Base64.encode(multipartFile.getBytes()));
+
+        itemService.update(item);
+
+        return item;
     }
 }
