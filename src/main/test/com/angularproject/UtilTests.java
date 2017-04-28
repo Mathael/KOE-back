@@ -34,5 +34,4 @@ public class UtilTests {
 		Assertions.assertThat(rnd5).isNotNull();
 		Assertions.assertThat(rnd5).isBetween(0, 10);
 	}
-
 }

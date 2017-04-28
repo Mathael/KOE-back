@@ -4,7 +4,7 @@ import com.angularproject.model.Hero;
 import com.angularproject.model.Item;
 import com.angularproject.service.HeroService;
 import com.angularproject.service.ItemService;
-import com.sun.org.apache.xml.internal.security.utils.Base64;
+import java.util.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.*;
@@ -39,9 +39,9 @@ public class UploadController {
         final Hero hero = optionnal.get();
 
         if(type.equalsIgnoreCase("icon"))
-            hero.setIconB64(Base64.encode(multipartFile.getBytes()));
+            hero.setIconB64(Base64.getEncoder().encodeToString(multipartFile.getBytes()));
         else
-            hero.setImageB64(Base64.encode(multipartFile.getBytes()));
+            hero.setImageB64(Base64.getEncoder().encodeToString(multipartFile.getBytes()));
 
         heroService.update(hero);
 
@@ -59,7 +59,7 @@ public class UploadController {
 
         final Item item = optionnal.get();
 
-        item.setImageB64(Base64.encode(multipartFile.getBytes()));
+        item.setImageB64(Base64.getEncoder().encodeToString(multipartFile.getBytes()));
 
         itemService.update(item);
 
